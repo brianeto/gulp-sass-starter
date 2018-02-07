@@ -2,3 +2,17 @@
 This file is been made to give you an example of what kind of files should
 be placed in this componets folder
 */
+
+.button {
+  padding: 0 25px;
+  height: 35;
+  line-height: 35px;
+  &__main {
+    background-color: $main-color;
+    color: white;
+  }
+  &__secondary {
+    background-color: transparent;
+    color: $main-color;
+  }
+}

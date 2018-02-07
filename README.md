@@ -37,4 +37,8 @@ All the development files are located in `src/` folder, please do not modify  an
 
 ## TODO'S
 
-* submit an issue or a PR if you'd like to contribute :)
+* Add modular html
+* Add grid system
+* Include best FrontEnd code practices via examples
+
+If there is something else you think it would be nice to have submit an issue or a PR if you'd like to contribute :)

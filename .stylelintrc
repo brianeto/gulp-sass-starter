@@ -13,7 +13,6 @@
     "block-no-empty": true,
     "block-opening-brace-newline-after": "always-multi-line",
     "color-no-invalid-hex": true,
-    "comment-empty-line-before": "never",
     "comment-no-empty": true,
     "comment-whitespace-inside": "always",
     "custom-property-empty-line-before": "always",
