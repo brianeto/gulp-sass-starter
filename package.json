@@ -1,32 +1,44 @@
 {
-  "name": "",
+  "name": "my-first-library",
   "version": "1.0.0",
-  "description": "",
+  "description": "My first starter pack library to use in a project",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "gulp sass_lint && jshint -c .jshintrc --verbose js"
+    "precommit": "gulp sass_lint && jshint -c .jshintrc --verbose src/core src/admin"
   },
-  "author": "Johaneto",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianeto/starterpack-library.git"
+  },
+  "author": "brianeto",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianeto/starterpack-library/issues"
+  },
+  "homepage": "https://github.com/brianeto/starterpack-library#readme",
   "devDependencies": {
-    "autoprefixer": "7.2.4",
-    "browser-sync": "2.18.13",
-    "gulp": "3.9.1",
-    "gulp-imagemin": "4.1.0",
-    "gulp-postcss": "7.0.1",
-    "gulp-sass": "3.1.0",
+    "autoprefixer": "^7.2.4",
     "babel-cli": "6.26.0",
-    "babel-core": "6.26.0",
-    "babel-preset-env": "1.6.1",
-    "gulp-babel": "7.0.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
     "gulp-concat": "2.6.1",
+    "gulp-imagemin": "^4.1.0",
     "gulp-notify": "3.0.0",
     "gulp-plumber": "1.1.0",
-    "gulp-sass-lint": "1.3.4",
-    "gulp-stylelint": "6.0.0",
-    "gulp-uglify": "3.0.0",
-    "husky": "0.14.3",
-    "stylelint": "8.4.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.4",
+    "gulp-stylelint": "^6.0.0",
+    "gulp-uglify": "^3.0.0",
+    "husky": "^0.14.3",
     "jshint-stylish": "2.2.1",
+    "stylelint": "^8.4.0"
+  },
+  "dependencies": {
+    "jshint": "^2.9.5"
   }
 }
