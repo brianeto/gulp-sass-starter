@@ -1,11 +1,11 @@
 {
-  "name": "my-first-library",
+  "name": "gulp-sass-starter",
   "version": "1.0.0",
-  "description": "My first starter pack library to use in a project",
+  "description": "A simple starter kit builded with Gulp, SASS, and js/sass lint for better coding",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "gulp sass_lint && jshint -c .jshintrc --verbose src/core src/admin"
+    "precommit": "gulp sass_lint && jshint -c .jshintrc --verbose src/js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/brianeto/starterpack-library#readme",
   "devDependencies": {
     "autoprefixer": "^7.2.4",
-    "babel-cli": "6.26.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "browser-sync": "^2.18.13",

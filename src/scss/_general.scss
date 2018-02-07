@@ -1,0 +1,19 @@
+/*
+Place for styles that concerns to the page itself
+*/
+
+.container {
+  background-color: $red;
+  &.box {
+    background-color: $green;
+    padding: .4;
+    &.wrapper {
+      background-color: $yellow;
+    }
+  }
+}
+p {
+  color: $red;
+  font-size: 5em;
+  background: $black;
+}

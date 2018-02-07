@@ -10,29 +10,29 @@ const
 
 // sass tasks
 gulp.task('sass', () =>
-  gulp.src('scss/main.scss')
+  gulp.src('src/scss/main.scss')
     .pipe(postcss([autoprefixer()]))
     .pipe(sass({
       sourceComments: false,
       outputStyle: 'compressed'
     }))
-    .pipe(gulp.dest('../'))
+    .pipe(gulp.dest('dist/css/'))
     .pipe(browserSync.stream())
 );   
 
 // javascript tasks
 gulp.task('js', () =>
-  gulp.src('js/main.js')
+  gulp.src('src/js/main.js')
   .pipe(babel({ presets: ['env'] }))
   .pipe(uglify())
-  .pipe(gulp.dest('../'))
+  .pipe(gulp.dest('dist/js/'))
 );
 
-// sass lint ftw
+// sass lint ftw(for better coding practices)
 gulp.task('sass_lint', lintCssTask = () => {
   const gulpStylelint = require('gulp-stylelint');
   return gulp
-    .src('scss/**/*.scss')
+    .src('src/scss/**/*.scss')
     .pipe(gulpStylelint({
       reporters: [
         { formatter: 'string', console: true }
@@ -40,21 +40,26 @@ gulp.task('sass_lint', lintCssTask = () => {
     }));
 });
 
-// images optimization
+// images optimization works with jpeg, jpg, svg, gif, png
 gulp.task('images', () =>
-  gulp.src('images/*')
+  gulp.src('src/images/*')
     .pipe(imagemin({ verbose: true }))
-    .pipe(gulp.dest('../images/'))
+    .pipe(gulp.dest('dist/images/'))
+);
+// Just copy/paste html to distribution folder
+gulp.task('html', () =>
+  gulp.src('src/index.html')
+    .pipe(gulp.dest('dist/'))
 );
 
-// Static Server + watching scss/html files
-gulp.task('default', ['sass', 'js'], () => {
+// Static Server + watching html/scss/js files
+gulp.task('default', ['sass', 'js', 'images', 'html'], () => {
   browserSync.init({
       server: {
-        baseDir: '../'
+        baseDir: 'dist/'
       }
   });
-  gulp.watch('scss/**/*.scss', ['sass']);
-  gulp.watch('js/main.js', ['js']);
-  gulp.watch('*.html').on('change', browserSync.reload);
+  gulp.watch('src/scss/**/*.scss', ['sass']);
+  gulp.watch('src/js/main.js', ['js']);
+  gulp.watch('src/index.html').on('change', browserSync.reload);
 });

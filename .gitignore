@@ -1,0 +1,60 @@
+
+# Created by https://www.gitignore.io/api/node,bower,osx,linux,windows,dropbox,sass,less,grunt,sublimetext,code
+# curated by brianeto XD
+
+### Node ###
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directory
+# https://docs.npmjs.com/misc/faq#should-i-check-my-node-modules-folder-into-git
+node_modules
+
+# Optional npm cache directory
+.npm
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+### Linux ###
+*~
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+### Sass ###
+.sass-cache/
+*.css.map
+
+### SublimeText ###
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+### Code ###
+# Visual Studio Code - https://code.visualstudio.com/
+.settings/
+.vscode/
