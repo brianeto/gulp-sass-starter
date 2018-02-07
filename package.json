@@ -1,6 +1,6 @@
 {
   "name": "gulp-sass-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple starter kit builded with Gulp, SASS, and js/sass lint for better coding",
   "main": "index.html",
   "scripts": {
