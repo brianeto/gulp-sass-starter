@@ -1,0 +1,1 @@
+"use strict";var wrapper=document.querySelectorAll("#wrapper");
