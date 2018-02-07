@@ -9,14 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brianeto/starterpack-library.git"
+    "url": "git+https://github.com/brianeto/gulp-sass-starter.git"
   },
   "author": "brianeto",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brianeto/starterpack-library/issues"
+    "url": "https://github.com/brianeto/gulp-sass-starter/issues"
   },
-  "homepage": "https://github.com/brianeto/starterpack-library#readme",
+  "keywords": ["Gulp", "SASS", "Babel", "browser-sync", "stylelint", "jshint", "Husky", "imagemin",
+    "Static Pages", "Starter kit", "modular", "BEM", "SMACSS" , "OOCSS"],
+  "homepage": "https://github.com/brianeto/gulp-sass-starter#readme",
   "devDependencies": {
     "autoprefixer": "^7.2.4",
     "babel-cli": "^6.26.0",
