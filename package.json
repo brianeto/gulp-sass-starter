@@ -16,8 +16,22 @@
   "bugs": {
     "url": "https://github.com/brianeto/gulp-sass-starter/issues"
   },
-  "keywords": ["Gulp", "SASS", "Babel", "browser-sync", "stylelint", "jshint", "Husky", "imagemin",
-    "Static Pages", "Starter kit", "modular", "BEM", "SMACSS" , "OOCSS"],
+  "keywords": [
+    "Gulp",
+    "SASS",
+    "Babel",
+    "browser-sync",
+    "stylelint",
+    "jshint",
+    "Husky",
+    "imagemin",
+    "Static Pages",
+    "Starter kit",
+    "modular",
+    "BEM",
+    "SMACSS",
+    "OOCSS"
+  ],
   "homepage": "https://github.com/brianeto/gulp-sass-starter#readme",
   "devDependencies": {
     "autoprefixer": "^7.2.4",
