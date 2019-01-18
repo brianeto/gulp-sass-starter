@@ -46,6 +46,7 @@ gulp.task('images', () =>
     .pipe(imagemin({ verbose: true }))
     .pipe(gulp.dest('dist/images/'))
 );
+
 // Just copy/paste html to distribution folder
 gulp.task('html', () =>
   gulp.src('src/index.html')
@@ -61,5 +62,6 @@ gulp.task('default', ['sass', 'js', 'images', 'html'], () => {
   });
   gulp.watch('src/scss/**/*.scss', ['sass']);
   gulp.watch('src/js/main.js', ['js']);
+  gulp.watch('src/index.html', ['html']); // Added to reload HTML when saved
   gulp.watch('src/index.html').on('change', browserSync.reload);
 });
