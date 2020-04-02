@@ -61,5 +61,6 @@ gulp.task('default', ['sass', 'js', 'images', 'html'], () => {
   });
   gulp.watch('src/scss/**/*.scss', ['sass']);
   gulp.watch('src/js/main.js', ['js']);
-  gulp.watch('src/index.html').on('change', browserSync.reload);
+  gulp.watch('src/index.html',['html']);
+  gulp.watch(['src/index.html','src/js/main.js','src/scss/**/*.scss']).on('change', browserSync.reload);
 });
